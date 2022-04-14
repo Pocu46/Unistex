@@ -9,9 +9,9 @@
     justify-content: space-around;
 }
 
-.header.container {
-    margin: 44px 0;
-}
+/*.header.container {*/
+/*    margin: 44px 0;*/
+/*}*/
 
 .container {
     display: flex;
@@ -19,10 +19,12 @@
     align-items: center;
     flex-direction: row;
     width: 960px;
+    /*margin: 44px 0;*/
 }
 
 .logo {
     height: 38px;
+    margin: 44px 0;
 }
 
 .buttons {
@@ -30,14 +32,11 @@
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
+    margin: 44px 0;
 }
 
 .buttons-option {
     margin: 0 15px;
-}
-
-.buttons-item.left {
-    border-right: 1px solid #fff;
 }
 
 .buttons-item {
@@ -49,6 +48,11 @@
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.buttons-item.left {
+    border-right: 1px solid #fff;
 }
 
 .buttons-item.green {
@@ -69,7 +73,7 @@
 }
 
 .numbers {
-    background: url("./images/deposit/0.png") no-repeat #0e1314;
+    background: url("../images/deposit/0.png") no-repeat #0e1314;
     height: 638px;
     width: 393px;
     display: flex;

@@ -1,0 +1,27 @@
+{
+  "name": "unistex",
+  "version": "1.0.0",
+  "description": "html + css project ",
+  "main": "index.js",
+  "dependencies": {
+    "gump": "^0.1.2"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pocu46/Unistex.git"
+  },
+  "author": "Andrew Pulyaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pocu46/Unistex/issues"
+  },
+  "homepage": "https://github.com/Pocu46/Unistex#readme"
+}
