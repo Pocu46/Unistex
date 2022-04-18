@@ -1,5 +1,6 @@
 @dark-blue: #0e1314;
 @green: #4FFFCA;
+@white: #fff;
 
 * {
     padding: 0;
@@ -13,17 +14,12 @@
     justify-content: space-around;
 }
 
-/*.header.container {*/
-/*    margin: 44px 0;*/
-/*}*/
-
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 960px;
-    /*margin: 44px 0;*/
 }
 
 .logo {
@@ -44,7 +40,7 @@
 }
 
 .buttons-item {
-    color: #fff;
+    color: @white;
     text-decoration: none;
     font-family: 'Montserrat';
     font-style: normal;
@@ -56,11 +52,11 @@
 }
 
 .buttons-item.left {
-    border-right: 1px solid #fff;
+    border-right: 1px solid @white;
 }
 
 .buttons-item.green {
-    color: #4FFFCA;
+    color: @green;
     text-decoration: none;
     font-family: 'Montserrat';
     font-style: normal;
@@ -71,13 +67,11 @@
 }
 
 .deposit {
-    background: #0e1314;
-    /*height: 638px;*/
-    /*width: 100%;*/
+    background: @dark-blue;
 }
 
 .numbers {
-    background: url("../images/deposit/0.png") no-repeat #0e1314;
+    background: url("../images/deposit/0.png") no-repeat @dark-blue;
     height: 638px;
     width: 393px;
     display: flex;
@@ -107,7 +101,7 @@
 .text-button {
     width: 181px;
     height: 44px;
-    background: #4FFFCA;
+    background: @green;
     border-radius: 10px;
     display: block;
     text-decoration: none;
@@ -147,13 +141,13 @@
     font-size: 26px;
     line-height: 115%;
     text-align: center;
-    color: #FFFFFF;
+    color: @white;
 }
 
 .trading-button {
     width: 341px;
     height: 50px;
-    background: #4FFFCA;
+    background: @green;
     border-radius: 10px;
     display: block;
     text-decoration: none;
@@ -168,7 +162,7 @@
 }
 
 .products {
-    background: #0e1314;
+    background: @dark-blue;
 }
 
 .products-heading {
@@ -200,7 +194,7 @@
     font-size: 36px;
     line-height: 115%;
     text-align: center;
-    color: #FFFFFF;
+    color: @white;
 }
 
 .products-item__list {
@@ -209,7 +203,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: @white;
 }
 
 .products-item__text {
@@ -218,7 +212,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: @white;
 }
 
 .products-item_logo {
