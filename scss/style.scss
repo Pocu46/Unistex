@@ -1,118 +1,114 @@
-@dark-blue: #0e1314;
-@green: #4FFFCA;
-@white: #fff;
+$dark-blue: #0e1314;
+$green: #4FFFCA;
+$white: #fff;
 
 * {
     padding: 0;
     margin: 0;
-}
-
-.header {
-    //background: #0e1314;
-    background: @dark-blue;
-    display: flex;
-    justify-content: space-around;
+    font-family: 'Montserrat';
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
     width: 960px;
 }
 
-.logo {
-    height: 38px;
-    margin: 44px 0;
-}
-
-.buttons {
+.header {
+    background: $dark-blue;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    margin: 44px 0;
-}
-
-.buttons-option {
-    margin: 0 15px;
-}
-
-.buttons-item {
-    color: @white;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    padding: 0 20px;
-}
-
-.buttons-item.left {
-    border-right: 1px solid @white;
-}
-
-.buttons-item.green {
-    color: @green;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
+    .container {
+        &top{
+            //display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            //width: 960px;
+            .logo {
+                height: 38px;
+                margin: 44px 0;
+            }
+            .buttons {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style-type: none;
+                margin: 44px 0;
+                .buttons-option {
+                    margin: 0 15px;
+                    .buttons-item {
+                        color: $white;
+                        text-decoration: none;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-transform: uppercase;
+                        padding: 0 20px;
+                        &left {
+                            border-right: 1px solid $white;
+                        }
+                        &green {
+                            color: $green;
+                            text-decoration: none;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .deposit {
-    background: @dark-blue;
-}
-
-.numbers {
-    background: url("../images/deposit/0.png") no-repeat @dark-blue;
-    height: 638px;
-    width: 393px;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.percent {
-    color: @green;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 255px;
-    line-height: 311px;
-}
-
-.text-content {
-    color: #EBE7E5;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 52px;
-    line-height: 63px;
-    text-transform: uppercase;
-}
-
-.text-button {
-    width: 181px;
-    height: 44px;
-    background: @green;
-    border-radius: 10px;
-    display: block;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 44px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #192227;
+    background: $dark-blue;
+    .numbers {
+        background: url("../images/deposit/0.png") no-repeat $dark-blue;
+        height: 638px;
+        width: 393px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        .percent {
+            color: $green;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 255px;
+            line-height: 311px;
+        }
+    }
+    .text {
+        .text-content {
+            color: #EBE7E5;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 63px;
+            text-transform: uppercase;
+        }
+        .text-button {
+            width: 181px;
+            height: 44px;
+            background: $green;
+            border-radius: 10px;
+            display: block;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 44px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #192227;
+        }
+    }
 }
 
 .rocket {
@@ -128,94 +124,79 @@
 
 .trading {
     background: #162027;
-}
-
-.container.flag {
-    display: flex;
-}
-
-.trading-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 115%;
-    text-align: center;
-    color: @white;
-}
-
-.trading-button {
-    width: 341px;
-    height: 50px;
-    background: @green;
-    border-radius: 10px;
-    display: block;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #192227;
+    .container.flag {
+        display: flex;
+        .trading-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 115%;
+            text-align: center;
+            color: $white;
+        }
+    }
+    .trading-button {
+        width: 341px;
+        height: 50px;
+        background: $green;
+        border-radius: 10px;
+        display: block;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #192227;
+    }
 }
 
 .products {
-    background: @dark-blue;
-}
-
-.products-heading {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 180px;
-    line-height: 115%;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*text-align: center;*/
-    /*background: radial-gradient(206.43% 206.43% at 50% -20.36%, #141E1E 0%, #0F1415 100%);*/
-    /*-webkit-background-clip: text;*/
-    /*-webkit-text-fill-color: transparent;*/
-    /*background-clip: text;*/
-    /*text-fill-color: transparent;*/
-}
-
-.products-item {
-    display: grid;
-
-}
-
-.products-item__heading {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 115%;
-    text-align: center;
-    color: @white;
-}
-
-.products-item__list {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: @white;
-}
-
-.products-item__text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: @white;
-}
-
-.products-item_logo {
-    width: 86px;
-    height: 87px;
+    background: $dark-blue;
+    .products-heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 180px;
+        line-height: 115%;
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        /*text-align: center;*/
+        /*background: radial-gradient(206.43% 206.43% at 50% -20.36%, #141E1E 0%, #0F1415 100%);*/
+        /*-webkit-background-clip: text;*/
+        /*-webkit-text-fill-color: transparent;*/
+        /*background-clip: text;*/
+        /*text-fill-color: transparent;*/
+    }
+    .products-item {
+        display: grid;
+        .products-item__logo {
+            width: 86px;
+            height: 87px;
+        }
+        .products-item__heading {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 115%;
+            text-align: center;
+            color: $white;
+        }
+        .products-item__list {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: $white;
+        }
+        .products-item__text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: $white;
+        }
+    }
 }

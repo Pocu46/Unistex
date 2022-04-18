@@ -1,7 +1,14 @@
-@dark-blue : #0e1314;
 * {
   padding: 0;
   margin: 0;
+  font-family: "Montserrat";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 960px;
 }
 
 .header {
@@ -9,40 +16,28 @@
   display: flex;
   justify-content: space-around;
 }
-
-/*.header.container {*/
-/*    margin: 44px 0;*/
-/*}*/
-.container {
-  display: flex;
+.header .containertop {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 960px;
-  /*margin: 44px 0;*/
 }
-
-.logo {
+.header .containertop .logo {
   height: 38px;
   margin: 44px 0;
 }
-
-.buttons {
+.header .containertop .buttons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
   margin: 44px 0;
 }
-
-.buttons-option {
+.header .containertop .buttons .buttons-option {
   margin: 0 15px;
 }
-
-.buttons-item {
+.header .containertop .buttons .buttons-option .buttons-item {
   color: #fff;
   text-decoration: none;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -50,15 +45,12 @@
   text-transform: uppercase;
   padding: 0 20px;
 }
-
-.buttons-item.left {
+.header .containertop .buttons .buttons-option .buttons-itemleft {
   border-right: 1px solid #fff;
 }
-
-.buttons-item.green {
+.header .containertop .buttons .buttons-option .buttons-itemgreen {
   color: #4FFFCA;
   text-decoration: none;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -68,11 +60,8 @@
 
 .deposit {
   background: #0e1314;
-  /*height: 638px;*/
-  /*width: 100%;*/
 }
-
-.numbers {
+.deposit .numbers {
   background: url("../images/deposit/0.png") no-repeat #0e1314;
   height: 638px;
   width: 393px;
@@ -80,27 +69,22 @@
   justify-content: right;
   align-items: center;
 }
-
-.percent {
+.deposit .numbers .percent {
   color: #4FFFCA;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 255px;
   line-height: 311px;
 }
-
-.text-content {
+.deposit .text .text-content {
   color: #EBE7E5;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 52px;
   line-height: 63px;
   text-transform: uppercase;
 }
-
-.text-button {
+.deposit .text .text-button {
   width: 181px;
   height: 44px;
   background: #4FFFCA;
@@ -130,29 +114,24 @@
 .trading {
   background: #162027;
 }
-
-.container.flag {
+.trading .container.flag {
   display: flex;
 }
-
-.trading-text {
-  font-family: "Montserrat";
+.trading .container.flag .trading-text {
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
   line-height: 115%;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
-
-.trading-button {
+.trading .trading-button {
   width: 341px;
   height: 50px;
   background: #4FFFCA;
   border-radius: 10px;
   display: block;
   text-decoration: none;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -165,9 +144,7 @@
 .products {
   background: #0e1314;
 }
-
-.products-heading {
-  font-family: "Montserrat";
+.products .products-heading {
   font-style: normal;
   font-weight: 700;
   font-size: 180px;
@@ -182,42 +159,35 @@
   /*background-clip: text;*/
   /*text-fill-color: transparent;*/
 }
-
-.products-item {
+.products .products-item {
   display: grid;
 }
-
-.products-item__heading {
-  font-family: "Montserrat";
+.products .products-item .products-item__logo {
+  width: 86px;
+  height: 87px;
+}
+.products .products-item .products-item__heading {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 115%;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
-
-.products-item__list {
+.products .products-item .products-item__list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+.products .products-item .products-item__text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #FFFFFF;
-}
-
-.products-item__text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
-}
-
-.products-item_logo {
-  width: 86px;
-  height: 87px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
