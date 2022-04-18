@@ -1,4 +1,5 @@
 @dark-blue: #0e1314;
+@green: #4FFFCA;
 
 * {
     padding: 0;
@@ -85,7 +86,7 @@
 }
 
 .percent {
-    color: #4FFFCA;
+    color: @green;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
